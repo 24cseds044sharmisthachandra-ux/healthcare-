@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🏥 HMS Dashboard</h1>
+
+<div class="card">
+  <h3>Create Appointment</h3>
+  <input id="patient" placeholder="Patient Name">
+  <input id="doctor" placeholder="Doctor Name">
+  <input id="date" type="date">
+  <button onclick="createAppointment()">Add</button>
+</div>
+
+<div class="card">
+  <h3>Appointments</h3>
+  <button onclick="getAppointments()">Load</button>
+  <ul id="appointments"></ul>
+</div>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
